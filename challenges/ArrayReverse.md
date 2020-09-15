@@ -14,3 +14,5 @@ The space complexity is O(1) because it takes constant space no matter the lengt
 
 ## Solution
 <!-- Embedded whiteboard image -->
+Did not whiteboard for this first challenge.
+
