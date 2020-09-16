@@ -11,4 +11,6 @@ A repo for daily coding challenges geared toward improving competence with data 
 ## Java Challenges Table of Contents:
 
   - [Reverse an Array](challenges/ArrayReverse.md)
+  - [Shift Array](challenges/ArrayShift.md)
+    - Collaborated with Garhett Morgan
 
