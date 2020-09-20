@@ -1,8 +1,8 @@
 package DataStructures.linkedList;
 
 public class Node {
-    public int value;
-    public Node next;
+    private int value;
+    private Node next;
 
     public Node(int value) {
         this.value = value;
