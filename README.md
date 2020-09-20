@@ -14,5 +14,5 @@ A repo for daily coding challenges geared toward improving competence with data 
   - [Shift Array](challenges/ArrayShift.md)
     - Collaborated with Garhett Morgan
   - [Binary Search](challenges/BinarySearch.md)
-    -Collaborated with Michael Wohl
-
+    - Collaborated with Michael Wohl
+  - [Linked Lists](DataStructures/dataStructures.md)
