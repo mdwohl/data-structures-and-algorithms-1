@@ -16,3 +16,4 @@ A repo for daily coding challenges geared toward improving competence with data 
   - [Binary Search](challenges/BinarySearch.md)
     - Collaborated with Michael Wohl
   - [Linked Lists](DataStructures/dataStructures.md)
+    - Collaborated with Michael Wohl and Paul O'Brien

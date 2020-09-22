@@ -27,6 +27,9 @@ public class LinkedList {
     }
 
     public boolean includes(int value) {
+        if (this.head == null) {
+            return false;
+        }
         if (this.head.getValue() == value) {
             return true;
         }
@@ -42,8 +45,7 @@ public class LinkedList {
 
     public void append(int newValue) {
         if (this.head == null) {
-            Node newNode = new Node(newValue);
-            head = newNode;
+            head = new Node(newValue);
             return;
         }
 
@@ -91,6 +93,7 @@ public class LinkedList {
                 currentNode.setNext(newNode);
                 return;
             }
+            currentNode = currentNode.getNext();
         }
         throw new Exception("Value not found.");
     }
