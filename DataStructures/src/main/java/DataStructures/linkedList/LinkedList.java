@@ -27,6 +27,9 @@ public class LinkedList {
     }
 
     public boolean includes(int value) {
+        if (this.head == null) {
+            return false;
+        }
         if (this.head.getValue() == value) {
             return true;
         }
@@ -42,8 +45,7 @@ public class LinkedList {
 
     public void append(int newValue) {
         if (this.head == null) {
-            Node newNode = new Node(newValue);
-            head = newNode;
+            head = new Node(newValue);
             return;
         }
 
@@ -91,7 +93,36 @@ public class LinkedList {
                 currentNode.setNext(newNode);
                 return;
             }
+            currentNode = currentNode.getNext();
         }
         throw new Exception("Value not found.");
+    }
+
+    public int kthFromEnd(int k) throws Exception {
+        if (this.head == null) {
+            throw new Exception("The linked list is empty");
+        }
+        if (k < 0) {
+            throw new Exception("input must be greater than or equal to 0");
+        }
+        Node node = this.head;
+        int listSize = 0;
+        int returnValue = node.getValue();
+
+        while (node != null) {
+            node = node.getNext();
+            listSize++;
+        }
+
+        if (listSize <= k) {
+            throw new NullPointerException("k input is out of bounds");
+        }
+        node = this.head;
+        for (int i = 0; i < listSize - k; i++) {
+            returnValue = node.getValue();
+            node = node.getNext();
+        }
+
+        return returnValue;
     }
 }
