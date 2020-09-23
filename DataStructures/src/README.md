@@ -9,3 +9,4 @@ Our whiteboard laid out our steps pretty clearly. We were able to come up with a
 I had a hard time understanding the visual at first.
 
 ## Solution
+(https://github.com/mdwohl/data-structures-and-algorithms-1/blob/master/DataStructures/src/Screen%20Shot%202020-09-22%20at%202.05.44%20PM.png)
